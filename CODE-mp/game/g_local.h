@@ -9,7 +9,7 @@
 //==================================================================
 
 // the "gameversion" client command will print this plus compile date
-#define	GAMEVERSION	"basejk"
+#define	GAMEVERSION	"sMod"
 
 #define BODY_QUEUE_SIZE		8
 
@@ -769,6 +769,7 @@ void DeathmatchScoreboardMessage (gentity_t *client);
 // g_main.c
 //
 extern vmCvar_t g_ff_objectives;
+extern vmCvar_t g_allowBlackNames;
 
 void FindIntermissionPoint( void );
 void SetLeader(int team, int client);

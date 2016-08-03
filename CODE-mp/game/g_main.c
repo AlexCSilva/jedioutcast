@@ -92,6 +92,7 @@ vmCvar_t	g_enableBreath;
 vmCvar_t	g_dismember;
 vmCvar_t	g_forceDodge;
 vmCvar_t	g_timeouttospec;
+vmCvar_t	g_allowBlackNames;
 
 int gDuelist1 = -1;
 int gDuelist2 = -1;
@@ -207,6 +208,7 @@ static cvarTable_t		gameCvarTable[] = {
 	{ &g_forceDodge, "g_forceDodge", "1", 0, 0, qtrue  },
 
 	{ &g_timeouttospec, "g_timeouttospec", "70", CVAR_ARCHIVE, 0, qfalse },
+	{ &g_allowBlackNames, "g_allowBlackNames", "0", CVAR_ARCHIVE, 0, qtrue }
 };
 
 // bk001129 - made static to avoid aliasing

@@ -214,7 +214,7 @@ static cvarTable_t		gameCvarTable[] = {
 	{ &g_timeouttospec, "g_timeouttospec", "70", CVAR_ARCHIVE, 0, qfalse },
 	{ &g_allowBlackNames, "g_allowBlackNames", "0", CVAR_ARCHIVE, 0, qtrue },
 	{ &g_duelStartHealth, "g_duelStartHealth", "0", CVAR_ARCHIVE, 0, qfalse },
-	{ &g_duelStartArmor, "g_duelStartArmor", 0, CVAR_ARCHIVE, 0, qfalse }
+	{ &g_duelStartArmor, "g_duelStartArmor", "0", CVAR_ARCHIVE, 0, qfalse }
 };
 
 // bk001129 - made static to avoid aliasing

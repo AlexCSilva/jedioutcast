@@ -9,7 +9,7 @@
 //==================================================================
 
 // the "gameversion" client command will print this plus compile date
-#define	GAMEVERSION	"sMod"
+#define	GAMEVERSION	"smU"
 
 #define BODY_QUEUE_SIZE		8
 
@@ -769,7 +769,11 @@ void DeathmatchScoreboardMessage (gentity_t *client);
 // g_main.c
 //
 extern vmCvar_t g_ff_objectives;
+
+//smU CVars
 extern vmCvar_t g_allowBlackNames;
+extern vmCvar_t g_duelStartHealth;
+extern vmCvar_t g_duelStartArmor;
 
 void FindIntermissionPoint( void );
 void SetLeader(int team, int client);

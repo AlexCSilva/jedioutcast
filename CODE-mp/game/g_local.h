@@ -244,7 +244,7 @@ struct gentity_s {
 	gitem_t		*item;			// for bonus items
 
 	// smU stuff
-	char	csMessage[MAX_STRINGS_CHARS]; // smU - Message to say CenterScreen
+	char	csMessage[MAX_STRING_CHARS]; // smU - Message to say CenterScreen
 	short	csTimeLeft; // smU - Time left for client's CenterScreen
 };
 

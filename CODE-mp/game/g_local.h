@@ -242,6 +242,10 @@ struct gentity_s {
 	int			damageRedirectTo; //this entity number
 
 	gitem_t		*item;			// for bonus items
+
+	// smU stuff
+	char	csMessage[MAX_STRINGS_CHARS]; // smU - Message to say CenterScreen
+	short	csTimeLeft; // smU - Time left for client's CenterScreen
 };
 
 #define DAMAGEREDIRECT_HEAD		1
@@ -304,6 +308,9 @@ typedef struct {
 	qboolean	setForce;			// set to true once player is given the chance to set force powers
 	int			updateUITime;		// only update userinfo for FP/SL if < level.time
 	qboolean	teamLeader;			// true when this client is a team leader
+
+	// smU serverside
+	qboolean	sawMOTD; //smU, has the client been shown the MOTD?
 } clientSession_t;
 
 //
@@ -774,6 +781,10 @@ extern vmCvar_t g_ff_objectives;
 extern vmCvar_t g_allowBlackNames;
 extern vmCvar_t g_duelStartHealth;
 extern vmCvar_t g_duelStartArmor;
+extern vmCvar_t g_consoleMOTD;
+extern vmCvar_t g_centerMOTDTime;
+extern vmCvar_t g_centerMOTD;
+extern vmCvar_t g_playerLog;
 
 void FindIntermissionPoint( void );
 void SetLeader(int team, int client);

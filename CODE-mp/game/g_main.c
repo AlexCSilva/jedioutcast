@@ -97,6 +97,10 @@ vmCvar_t	g_timeouttospec;
 vmCvar_t	g_allowBlackNames;
 vmCvar_t	g_duelStartHealth;
 vmCvar_t	g_duelStartArmor;
+vmCvar_t	g_consoleMOTD;
+vmCvar_t	g_centerMOTDTime;
+vmCvar_t	g_centerMOTD;
+vmCvar_t	g_playerLog;
 
 int gDuelist1 = -1;
 int gDuelist2 = -1;
@@ -210,11 +214,16 @@ static cvarTable_t		gameCvarTable[] = {
 
 	{ &g_dismember, "g_dismember", "0", 0, 0, qtrue  },
 	{ &g_forceDodge, "g_forceDodge", "1", 0, 0, qtrue  },
-
+	
+		// smU cvars
 	{ &g_timeouttospec, "g_timeouttospec", "70", CVAR_ARCHIVE, 0, qfalse },
 	{ &g_allowBlackNames, "g_allowBlackNames", "0", CVAR_ARCHIVE, 0, qtrue },
 	{ &g_duelStartHealth, "g_duelStartHealth", "0", CVAR_ARCHIVE, 0, qfalse },
-	{ &g_duelStartArmor, "g_duelStartArmor", "0", CVAR_ARCHIVE, 0, qfalse }
+	{ &g_duelStartArmor, "g_duelStartArmor", "0", CVAR_ARCHIVE, 0, qfalse },
+	{ &g_consoleMOTD, "g_consoleMOTD", "", CVAR_ARCHIVE, 0, qfalse },
+	{ &g_centerMOTDTime, "g_centerMOTDTime", "5", CVAR_ARCHIVE, 0, qfalse },
+	{ &g_centerMOTD, "g_centerMOTD", "", CVAR_ARCHIVE, 0, qfalse },
+	{ &g_playerLog, "g_playerLog", "0", CVAR_ARCHIVE, 0, qtrue }
 };
 
 // bk001129 - made static to avoid aliasing

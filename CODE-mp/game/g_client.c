@@ -1533,13 +1533,13 @@ void ClientBegin( int clientNum, qboolean allowTeamReset ) {
 		if (Q_stricmp(g_consoleMOTD.string, ""))
 			trap_SendServerCommand(ent - g_entities, va("print \"%s\n\"", g_consoleMOTD.string));
 
-		/*if (Q_stricmp(g_centerMOTD.string, "")) {
+		if (Q_stricmp(g_centerMOTD.string, "")) {
 		strcpy(ent->client->csMessage, G_NewString(va("^7%s\n", g_centerMOTD.string)));
 		ent->client->csTimeLeft = g_centerMOTDTime.integer;
 
 		}
 
-		if (g_playerLog.integer && ent && ent->client && !(ent->r.svFlags & SVF_BOT))
+		/*if (g_playerLog.integer && ent && ent->client && !(ent->r.svFlags & SVF_BOT))
 		G_AddPlayerLog(client->pers.netname, client->sess.IP, client->pers.guid);*/
 
 		ent->client->sess.sawMOTD = qtrue;

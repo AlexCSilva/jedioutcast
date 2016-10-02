@@ -416,6 +416,10 @@ struct gclient_s {
 
 	int			dangerTime;		// level.time when last attack occured
 
+	// smU stuff
+	char	csMessage[MAX_STRING_CHARS]; // smU - Message to say CenterScreen
+	short	csTimeLeft; // smU - Time left for client's CenterScreen
+
 	qboolean	fjDidJump;
 };
 
